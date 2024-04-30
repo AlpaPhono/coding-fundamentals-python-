@@ -24,6 +24,34 @@ class Password_checker():
 
         self.password = password
 
+    def pass_length(self):
+        '''
+        Finds the length of the password
+        
+        Args:
+            self: object of the class
+
+        Returns:
+            length (int): The number of characters in the password
+        '''
+
+        password = self.password
+        length = len(password)
+        return length
+    
+    def length_rating(cls,password):
+
+        if 1 < cls(password).pass_length() < 5:
+            print("password is weak") 
+        elif 5 < cls(password).pass_length() < 10:
+            print("password is medium")
+        else:
+            print("password is strong")
+
+
+        
+
+
     def pattern_search(self):
         password = self.password
 
