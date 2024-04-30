@@ -50,5 +50,13 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(calc.add(-1,-1),-2)
         self.assertEqual(calc.add(0,0),0)
 
+    @unittest.skip("skipping...")
+    def test_skip(self):
+            pass
+    
+    @unittest.skipIf(1 == 1, "skipping also")
+    def test_skip_if(self):
+        pass
+
 if __name__ == '__main__':
     unittest.main()
