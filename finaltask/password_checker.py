@@ -77,3 +77,5 @@ class Password_checker():
             print("This password is too weak.")
 
 
+    def password_ranking(self):
+        pass
